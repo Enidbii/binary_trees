@@ -29,8 +29,8 @@ int binary_tree_is_full(const binary_tree_t *tree)
 	if (binary_tree_is_leaf(tree))
 		return (1);
 
-	lt = binary_tree_is_full(tree->lt);
-	rt = binary_tree_is_full(tree->rt);
+	lt = binary_tree_is_full(tree->left);
+	rt = binary_tree_is_full(tree->right);
 
 	if (lt == 0 || rt == 0)
 		return (0);
